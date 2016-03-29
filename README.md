@@ -12,11 +12,18 @@ Ed
 
 Ed
 
+#Companion projects
+
+Macquarie Open Analytics Toolkit - https://github.com/dannyliu-mq/moat
+
 #References
 
 Link through to xAPI spec.
+
+Link through to Learning Locker xAPI tool.
 
 #Credits
 
 * Code: Ed Moore (ed.moore@mq.edu.au) and Yvonne-Noemi Nemes (yvonne.nemes@mq.edu.au)
 * Concept: Danny Liu (danny.liu@mq.edu.au) and James Hamilton
+* Funding: Macquarie University
