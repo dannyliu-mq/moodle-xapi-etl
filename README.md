@@ -4,6 +4,10 @@ This tool reads from the Moodle database and ETLs (extracts, transforms, and loa
 
 This tool is part of the larger Macquarie Open Analytics Toolkit (MOAT) project at Macquarie University in Sydney, Australia. The MOAT project seeks to address learning analytics holistically, bringing together data from the learning management system and beyond, combining visualisations and data modelling techniques with pedagogical insight and a customisable intervention engine to help staff improve the learning experience for students.
 
+##Technical details
+
+The importer reads events from the Moodle logstore_standard_log table (Moodle version 2.7+)...
+
 #Installation
 
 Ed
@@ -12,15 +16,15 @@ Ed
 
 Ed
 
-#Companion projects
+#Related projects
 
 Macquarie Open Analytics Toolkit - https://github.com/dannyliu-mq/moat
 
 #References
 
-Link through to xAPI spec.
+This importer is structurally based on the moodle-logstore_xapi (https://github.com/jlowe64/moodle-logstore_xapi) Moodle plugin developed by Learning Locker (https://learninglocker.net/blog/say-hello-to-our-little-plugin/)
 
-Link through to Learning Locker xAPI tool.
+Experience API (xAPI) specification: https://github.com/adlnet/xAPI-Spec/blob/master/xAPI.md
 
 #Credits
 
