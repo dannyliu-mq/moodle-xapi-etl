@@ -10,11 +10,23 @@ The importer reads events from the Moodle logstore_standard_log table (Moodle ve
 
 #Installation
 
-Ed
+Installation for Ubuntu
+1. For good practice, `apt-get update`
+2. `apt-get upgrade`
+3. Clone the repo: `git clone https://github.com/dannyliu-mq/moodle-xapi-etl`
+4. Install psycopg2: `apt-get install python-psycopg2`
+5. Install easy_install: `apt-get install python-setuptools python-dev build-essential`
+6. Install pytz: `easy_install --upgrade pytz`
+7. Install aniso8601: `easy_install --upgrade aniso8601`
+8. Install pymongo: `easy_install --upgrade pymongo`
 
 #Usage
 
-Ed
+To run the importer, you will need to setup a config file.
+There is an example config file included with the repository.
+Create a copy of the file `cp config.py.sample config.py`
+Edit the file to suit your systems, more assistance is in the file.
+Finally to run the program, `./importer.py` will run the program however as it may take many hours (or days) to run, depending on the amount of records, we suggest installing screen program to allow users to leave a ssh session while running it in a resumable screen.
 
 #Related projects
 
