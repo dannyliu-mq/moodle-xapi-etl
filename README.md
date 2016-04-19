@@ -6,7 +6,13 @@ This tool is part of the larger Macquarie Open Analytics Toolkit (MOAT) project 
 
 ##Technical details
 
-The importer reads events from the Moodle logstore_standard_log table (Moodle version 2.7+)...
+The importer reads events from the Moodle logstore_standard_log table (Moodle version 2.7+), translates the information into a standard format and passes it to a LRS for validation and storage.
+
+#Requirements
+
+* LearningLocker
+* Moodle (postgres database)
+* MonogDB
 
 #Installation
 ##Installation for Ubuntu
@@ -23,7 +29,7 @@ The importer reads events from the Moodle logstore_standard_log table (Moodle ve
 
 To run the importer, you will need to setup a config file.
 There is an example config file included with the repository.
-Create a copy of the file `cp config.py.sample config.py`
+Create a copy of the file `cp config.dist.py config.py`
 Edit the file to suit your systems, more assistance is in the file.
 Finally to run the program, `./importer.py` will run the program however as it may take many hours (or days) to run, depending on the amount of records, we suggest installing screen program to allow users to leave a ssh session while running it in a resumable screen.
 
