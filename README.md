@@ -15,7 +15,8 @@ The importer reads events from the Moodle logstore_standard_log table (Moodle ve
 * MonogDB
 
 #Installation
-##Installation for Ubuntu
+Installation for Ubuntu
+
 1. For good practice, `apt-get update`
 2. `apt-get upgrade`
 3. Clone the repo: `git clone https://github.com/dannyliu-mq/moodle-xapi-etl`
